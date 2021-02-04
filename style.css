@@ -1,0 +1,392 @@
+body{font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Schoolbell', cursive;}
+h1{font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 160px;
+    line-height: 187px;}
+h2{font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;}
+h3{font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;}
+h4{font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;}
+p1{font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;}
+p2{font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;}
+p3{font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;}
+p4{font-family: Schoolbell;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: white;}
+p5{font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;}
+
+.flexChild{
+    flex-basis: 100%;
+    margin-right: 10px;   
+}
+
+#fixedlogo{
+    position: fixed;
+    left: 10px;
+    top: 26px;
+    width: 60px;}
+#location{
+    position: absolute;
+    width: 223px;
+    height: 55px;
+    right: 75px;
+    top: 50px;
+    text-align: right;
+    z-index: 100;}
+.intro{
+    display: flex;
+    flex-direction: column;
+    }
+#header{
+    margin-top: 100px;
+    margin-left: 75px;
+    width: 25%;
+}
+#introduction{
+    background-color: #FBA91E;
+    position: relative;
+    padding-bottom: 50px;
+}
+#introinfo{
+    width: 30%;
+    padding-top: 50px;
+    padding-left: 75px;
+    display: inline-block;
+    vertical-align: top;
+    }
+#introimage{
+    width: 60%;
+    float: right;
+}
+.userResearch{
+    margin-left: 75px;
+    margin-right: 75px;
+    display: grid;
+    grid-row: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "userHeading"
+    "heuristicEvaluation"
+    "surveyResults"
+    "competitorHeading"
+    "strengthWeakness"
+    "competitorAnalysis";
+}
+#userHeading{
+    margin-bottom: 50px;
+    grid-area: userHeading;
+}
+#heuristicEvaluation{
+    grid-area: heuristicEvaluation;
+    display: flex;
+    margin-bottom: 50px;
+}
+#surveyResults{
+    margin-top: 50px;
+    grid-area: surveyResults;
+    display: flex;
+    margin-bottom: 50px;
+}
+#competitorHeading{
+    grid-area: competitorHeading;
+}
+#strengthWeakness{
+    grid-area: strengthWeakness;
+    display: flex;
+    margin-bottom: 50px;
+}
+#competitorAnalysis{
+    margin-top: 50px;
+    grid-area: competitorAnalysis;
+    display: flex;
+    margin-bottom: 50px;
+}
+.bubbles{
+    width: 80%;
+    margin-right: 10px;
+}
+#graphs{
+    width: 90%;
+    flex-basis: 40%;
+}
+#graphs1{
+    padding-left: 100px;
+    vertical-align: bottom;
+    width: 65%;
+    flex-basis: 40%;
+}
+#graphInfo{
+    text-align: right;
+    flex-basis: 20%;
+}
+#competitorAdvantages{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #F05426;
+    margin-right: 10px;
+}
+#competitorStrengths{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #FBA91E;
+    margin-right: 10px;
+}
+#competitorWeaknesses{
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #6176AF;
+    margin-right: 10px;
+}
+
+#interviewInfo{
+    flex-basis: 30%;
+    padding-right: 10px;
+}
+#interviewData2{
+    flex-basis: 70%;
+    text-align: center;
+}
+#competitorAnalysis{
+    margin-top: 50px;
+}
+.definitionAndSynthesis{
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    display: grid;
+    grid-row: auto auto;
+    grid-template-areas: "definitionHeader"
+    "userPersona";
+    background-color: #F05426;
+}
+#definitionHeader{
+    grid-area: definitionHeader;
+}
+#userPersona{
+    grid-area: userPersona;
+    display: flex;
+}
+#persona1{
+    flex-basis: 20%;
+}
+#persona2{
+    flex-basis: 30%;
+    padding-right: 60px;
+}
+#problemStatement{
+    padding: 20px;
+    background-color: white;
+    flex-basis: 50%;
+}
+#user{
+    width: 80%;
+}
+.ideation{
+    display: grid;
+    grid-row: auto auto auto auto auto auto;
+    grid-template-areas: "ideationHeader"
+    "iLike"
+    "flow"
+    "colorHeader"
+    "colors"
+    "colorCaption";
+    margin-left: 75px;
+    margin-right: 75px;
+}
+#ideationHeader{
+    grid-area: ideationHeader;
+}
+#iLike{
+    grid-area: iLike;
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+#flow{
+    grid-area: flow;
+    display: flex;
+}
+#colorHeader{
+    margin-top: 50px;
+    grid-area: colorHeader;
+}
+#colors{
+    grid-area: colors;
+    display: flex;
+    margin-bottom: 10px;
+}
+#colorCaption{
+    grid-area: colorCaption;
+    margin-bottom: 50px;
+}
+#pills{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-basis: 100%;
+}
+.pill{
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #6176AF;
+    color: white;
+}
+#userFlow{
+    width: 100%;
+    flex-basis: 60%;
+}
+#userFlow1{
+    flex-basis: 40%;
+}
+.swatch{
+    height: 50px;
+    width: 100%;
+    margin-right: 10px;
+}
+#orange{
+    background-color: #F05426;
+}
+#yellow{
+    background-color: #FBA91E;
+}
+#blue{
+    background-color: #6176AF;
+}
+
+.prototyping{
+    display: flex;
+    padding-left: 75px;
+    background-color: #6176AF;
+    color: white;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#wireframe2{
+    width: 100%;
+    flex-basis: 60%;
+}
+#wireframe1{
+    flex-basis: 40%;
+}
+.userTestingAndOutcomes{
+    display: grid;
+    grid-row: auto auto auto auto auto;
+    grid-template-areas: "utheading"
+    "userTesting2"
+    "testingCaption"
+    "responsiveDesign"
+    ;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+#utheading{
+    grid-area: utheading;
+}
+#userTesting2{
+    grid-area: userTesting2;
+    display: flex;
+}
+#testingCaption{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-area: testingCaption;
+}
+#responsiveDesign{
+    grid-area: responsiveDesign;
+    display: flex;
+}
+#responsiveDesign2{
+    margin-right: 100px;
+    background-color: #6176AF;
+    padding: 20px;
+    color: white;
+
+}
+.graph{
+    width: 70%;
+}
+.whiteBox{
+    background-color: white;
+    padding: 15px;
+}
+.mobile1{
+    width: 70%;
+}
+
+
+
+.conclusions{
+    margin-top: 50px;
+    display: grid;
+    grid-row: auto auto auto;
+    background-color: #FBA91E;
+    grid-template-areas: "conclusionHeading"
+    "conclusions";
+}
+#conclusionHeading{
+    margin-left: 75px;
+    grid-area: conclusionHeading;
+}
+#conclusions{
+    margin-left: 75px;
+    grid-area: conclusions;
+    display: flex;
+}
+#finalHome{
+    width: 70%;
+    flex-basis: 40%;
+    padding-bottom: 50px;
+}
+#concludingStatements{
+    margin-right: 75px;
+    flex-basis: 60%;
+}
+
+.finalGifs{
+    padding-top: 160px;
+    width: 100%;
+}
+
+
+
+
+/*Footer*/
+.footer{grid-area: footer;
+    text-align: right;
+    margin-right: 75px;
+    margin-bottom: 50px;}
